@@ -1,0 +1,227 @@
+[
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/Screenshot_1.png",
+    "heading": "2022 Complete Python Bootcamp From Zero to Hero",
+    "author": "Jose Portilla",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e7a",
+    "catagory": "Web Development"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/Screenshot_2.png",
+    "heading": "The Web Developer Bootcamp 2022",
+    "author": "Colt Steele",
+    "rating": 4.7,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e7b",
+    "catagory": "Web Development"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/Screenshot_3.png",
+    "heading": "Machine Learning A-Z: Hands on python and R in Data Science",
+    "author": "Kirill Eremco",
+    "rating": 4.5,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e7c",
+    "catagory": "Web Development"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/Screenshot_4.png",
+    "heading": "Java Programming Master Class With Java11 & Java17",
+    "author": "Tim Buchulka",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e7d",
+    "catagory": "Web Development"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/Screenshot_5.png",
+    "heading": "Complete Web Development Bootcamp",
+    "author": "Dr. Angela Yu",
+    "rating": 4.7,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e7e",
+    "catagory": "Web Development"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/mba1.png",
+    "heading": "An Entire MBA in 1 Course",
+    "author": "Chris Haroun",
+    "rating": 4.5,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e7f",
+    "catagory": "Business"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/pmp.png",
+    "heading": "PMP Exam Prep  Seminar- Complete Exam Coverage",
+    "author": "Joseph Philips",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e80",
+    "catagory": "Business"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/business_intelegence.png",
+    "heading": "The Business Inteligence Analyst Course 2022",
+    "author": "365 Careers",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e81",
+    "catagory": "Business"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/product_manager.png",
+    "heading": "Become a Product Manager | Learn the Skills & Get the job",
+    "author": "Cole Mercer",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e82",
+    "catagory": "Business"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/powerbi.png",
+    "heading": "Microsoft Power BI Desktop for Business Intelligence",
+    "author": "Aaron Parry",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e83",
+    "catagory": "Business"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/financial_analist_haroun.png",
+    "heading": "The Complete Financial Analust Training & Investing Course",
+    "author": "Chris Haroun",
+    "rating": 4.6,
+    "price": 786,
+    "course_id": "61f01f364afff51a16913e84",
+    "catagory": "Finance & Accounting"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/begainer2pro_excel.png",
+    "heading": "Begainer to Pro in Excel: Financial Modeling",
+    "author": "365 Careers",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e85",
+    "catagory": "Finance & Accounting"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/finance_accounting_hauron.png",
+    "heading": "Introduction to Finance Accounting , Modeling",
+    "author": "Chris Haroun",
+    "rating": 4.5,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e86",
+    "catagory": "Finance & Accounting"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/crypto.png",
+    "heading": "Cryptocurrency Investment Course 2022",
+    "author": "Suppoman",
+    "rating": 4.7,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e87",
+    "catagory": "Finance & Accounting"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/stock.png",
+    "heading": "Learn to Trade in Stock Market",
+    "author": "Mohsen Hassan",
+    "rating": 4.5,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e88",
+    "catagory": "Finance & Accounting"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/hacking.png",
+    "heading": "Learn Ethetical Hacking From Scratch",
+    "author": "z Security",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e89",
+    "catagory": "IT & Software"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/hacker_exposed.png",
+    "heading": "The Complete Cyber Security Course - Hacker Exposed!",
+    "author": "Stephane Maarek",
+    "rating": 4.7,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e8a",
+    "catagory": "IT & Software"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/hacking_beg2adv.png",
+    "heading": "The Ethetical Hacking Course- Begainer to Advanced",
+    "author": "Armin Kreponic",
+    "rating": 4.3,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e8b",
+    "catagory": "IT & Software"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/aws.png",
+    "heading": "Ultimate AWS Certified Developer Associate",
+    "author": "Stephene Maarak",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e8c",
+    "catagory": "IT & Software"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/networking.png",
+    "heading": "The Complete Networking Fundamental Course",
+    "author": "David Bombal",
+    "rating": 4.7,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e8d",
+    "catagory": "IT & Software"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/12In1.png",
+    "heading": "The Complete Digital Marketing Course",
+    "author": "Rob Percival",
+    "rating": 4.5,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e8e",
+    "catagory": "Marketing"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/googleads.png",
+    "heading": "Ultimate Google Ads Training 2021",
+    "author": "Issac Rudansky",
+    "rating": 4.6,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e8f",
+    "catagory": "Marketing"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/facebook.png",
+    "heading": "Facebook Ads and facebook marketing Mastery 2022",
+    "author": "COURSE ENVY",
+    "rating": 4.5,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e90",
+    "catagory": "Marketing"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/insta.png",
+    "heading": "Instragram Marketing 2022",
+    "author": "Benjamin Wilson",
+    "rating": 4.5,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e91",
+    "catagory": "Marketing"
+  },
+  {
+    "image": "https://next-js-blog-codebash.s3.us-east-2.amazonaws.com/analitics.png",
+    "heading": "Google Analytics Certification- Become Analytics Certified",
+    "author": "Darag Walh",
+    "rating": 4.5,
+    "price": 455,
+    "course_id": "61f01f364afff51a16913e92",
+    "catagory": "Marketing"
+  }
+]

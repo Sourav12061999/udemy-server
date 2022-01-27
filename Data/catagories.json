@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Development",
+    "subcat": [
+      "Web Development",
+      "Game Development",
+      "Mobile Development",
+      "Programming Languages"
+    ]
+  },
+  {
+    "name": "Business",
+    "subcat": ["Entrepreneurship", "Communication", "Management", "Sales"]
+  },
+  {
+    "name": "Finance & Accounting",
+    "subcat": [
+      "Finance",
+      "Accounting & Bookkeeping",
+      "Cryptocurrency",
+      "Investment & Trading"
+    ]
+  },
+  {
+    "name": "IT & Software",
+    "subcat": ["IT Certification", "Hardware", "Networking", "Operating System"]
+  },
+  {
+    "name": "Marketing",
+    "subcat": ["SEO", "Digital Marketing", "Branding", "Social Media Marketing"]
+  }
+]
