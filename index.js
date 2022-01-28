@@ -11,6 +11,7 @@ app.use(cors()); // Using the cors package
 
 connect(); // Here connecting with mongodb
 // After the connecting has been made starting the server
-app.listen(80, () => {
+let PORT = process.env.PORT || 80;
+app.listen(PORT, () => {
   console.log("Server Started");
 });
