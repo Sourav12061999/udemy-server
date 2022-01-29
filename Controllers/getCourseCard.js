@@ -29,3 +29,4 @@ router.get("/getCards/catagory=:catagoryName", async (req, res) => {
     res.send(300).json({ error }); // If an error occours send the error message with a status code of 300
   }
 });
+module.exports = router;

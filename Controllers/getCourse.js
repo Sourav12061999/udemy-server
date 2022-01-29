@@ -18,3 +18,4 @@ router.get("/courseId=:courseID", async (req, res) => {
     res.status(300).json({ error });
   }
 });
+module.exports = router;

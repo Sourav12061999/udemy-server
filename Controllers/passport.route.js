@@ -36,3 +36,4 @@ router.get(
     session: false,
   })
 );
+module.exports = router;
