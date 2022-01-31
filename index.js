@@ -16,6 +16,9 @@ app.use(cors()); // Using the cors package
 
 // Using the routes
 // Routes for getting Data
+app.get("/", async (req, res) => {
+  res.send("All Ok");
+});
 app.use("/AllCatagories", CatagoryRoute);
 app.use("/Courses", CourseRoute);
 app.use("/CourseCard", CourseCardRoute);
