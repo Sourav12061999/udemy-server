@@ -4,6 +4,7 @@ const cors = require("cors");
 require("dotenv").config(); // Importing and using dotenv
 // Importing from my own code
 const connect = require("./Utils/mongoose-start"); // Importing the connecting function for mongodb
+const comment = require("./Schemas/comments.schema");
 // Here I am importing all routes
 const CatagoryRoute = require("./Controllers/getCatagory");
 const CourseRoute = require("./Controllers/getCourse");

@@ -29,4 +29,17 @@ router.get("/getCards/catagory=:catagoryName", async (req, res) => {
     res.send(300).json({ error }); // If an error occours send the error message with a status code of 300
   }
 });
+
+router.get("/getCards/courseID:courseID", async (req, res) => {
+  try {
+    let cardData = await courseCard
+      .find({ course_id: req.params.courseID })
+      .lean()
+      .exec();
+    let data = await courseCard.find({ catagory: cardData.catagory });
+    res.status(200).json(data);
+  } catch (error) {
+    res.send(300).json({ error }); // If an error occours send the error message with a status code of 300
+  }
+});
 module.exports = router;

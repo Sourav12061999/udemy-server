@@ -10,12 +10,12 @@ router.get("/courseId=:courseID", async (req, res) => {
   try {
     let data = await course
       .findById(req.params.courseID)
-      .populate("comments")
+      .populate("comment")
       .lean()
       .exec();
     res.status(200).json(data);
   } catch (error) {
-    res.status(300).json({ error });
+    res.status(300).json({ error: error.message });
   }
 });
 module.exports = router;
