@@ -7,10 +7,20 @@ const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String, required: false },
   cartCourses: [
-    { type: mongoose.Schema.Types.ObjectId, unique: true, required: false },
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      unique: true,
+      required: false,
+      ref: "courseCards",
+    },
   ],
   boughtCourses: [
-    { type: mongoose.Schema.Types.ObjectId, unique: true, required: false },
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      unique: true,
+      required: false,
+      ref: "courseCards",
+    },
   ],
 });
 

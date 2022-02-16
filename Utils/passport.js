@@ -16,9 +16,6 @@ passport.use(
       callbackURL: "http://localhost/auth/google/callback",
     },
     async function (accessToken, refreshToken, profile, done) {
-      //   User.findOrCreate({ googleId: profile.id }, function (err, user) {
-      //     return done(err, user);
-      //   });
       let User = await user
         .findOne({ email: profile._json.email })
         .lean()
