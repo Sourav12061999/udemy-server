@@ -51,7 +51,7 @@ app.get(
 );
 connect(); // Here connecting with mongodb
 // After the connecting has been made starting the server
-let PORT = process.env.PORT || 80;
+let PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log("Server Started");
 });
