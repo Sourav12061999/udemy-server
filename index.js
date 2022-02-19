@@ -31,21 +31,21 @@ app.use("/getuser", userRoute);
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
-    failureRedirect: `${process.env.front_end_page}/login`,
+    failureRedirect: `https://udemy-clone-front-end.vercel.app/login`,
     session: false,
   }),
   function (req, res) {
     if (req.user) {
       res.cookie("udemy-clone-signin", req.user._id.toString());
     }
-    res.redirect(`${process.env.front_end_page}/`);
+    res.redirect(`https://udemy-clone-front-end.vercel.app/`);
   }
 );
 app.get(
   "/auth/facebook/callback",
   passport.authenticate("facebook", {
-    successRedirect: `${process.env.front_end_page}/`,
-    failureRedirect: `${process.env.front_end_page}/login`,
+    successRedirect: `https://udemy-clone-front-end.vercel.app/`,
+    failureRedirect: `https://udemy-clone-front-end.vercel.app/login`,
     session: false,
   })
 );
