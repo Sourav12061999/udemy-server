@@ -8,7 +8,8 @@ passport.use(
       clientID:
         "14082363482-mru7r6gtg8ek1l4vme9jlsrlsvm8vhl9.apps.googleusercontent.com",
       clientSecret: "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",
-      callbackURL: "http://localhost/auth/google/callback",
+      callbackURL:
+        "https://udemy-clone-server-node.herokuapp.com/auth/google/callback",
     },
     async function (accessToken, refreshToken, profile, done) {
       let User = await user
@@ -34,7 +35,8 @@ passport.use(
     {
       clientID: "627882748352948",
       clientSecret: "97451c8707c08a1e533d661c45cc5df8",
-      callbackURL: "http://localhost/auth/facebook/callback",
+      callbackURL:
+        "https://udemy-clone-server-node.herokuapp.com/auth/facebook/callback",
     },
     function (accessToken, refreshToken, profile, done) {
       return done(null, "done");
