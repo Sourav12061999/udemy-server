@@ -34,17 +34,17 @@ app.get(
     successRedirect: "https://udemy-clone-front-end.vercel.app/",
     failureRedirect: `https://udemy-clone-front-end.vercel.app/`,
     session: false,
-  }),
-  function (req, res) {
-    try {
-      if (req.user) {
-        res.cookie("udemy-clone-signin", req.user._id.toString());
-      }
-      res.redirect(`https://udemy-clone-front-end.vercel.app/`);
-    } catch (error) {
-      res.send("Not all ok");
-    }
-  }
+  })
+  // function (req, res) {
+  //   try {
+  //     if (req.user) {
+  //       res.cookie("udemy-clone-signin", req.user._id.toString());
+  //     }
+  //     res.redirect(`https://udemy-clone-front-end.vercel.app/`);
+  //   } catch (error) {
+  //     res.send("Not all ok");
+  //   }
+  // }
 );
 // app.get(
 //   "/auth/facebook/callback",
