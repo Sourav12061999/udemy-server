@@ -31,6 +31,7 @@ app.use("/getuser", userRoute);
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
+    successRedirect: "https://udemy-clone-front-end.vercel.app/",
     failureRedirect: `https://udemy-clone-front-end.vercel.app/`,
     session: false,
   }),
@@ -45,14 +46,14 @@ app.get(
     }
   }
 );
-app.get(
-  "/auth/facebook/callback",
-  passport.authenticate("facebook", {
-    successRedirect: `https://udemy-clone-front-end.vercel.app/`,
-    failureRedirect: `https://udemy-clone-front-end.vercel.app/`,
-    session: false,
-  })
-);
+// app.get(
+//   "/auth/facebook/callback",
+//   passport.authenticate("facebook", {
+//     successRedirect: `https://udemy-clone-front-end.vercel.app/`,
+//     failureRedirect: `https://udemy-clone-front-end.vercel.app/`,
+//     session: false,
+//   })
+// );
 connect(); // Here connecting with mongodb
 // After the connecting has been made starting the server
 let PORT = process.env.PORT || 80;

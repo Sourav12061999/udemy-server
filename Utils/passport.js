@@ -9,8 +9,8 @@ passport.use(
         "961217226688-01upqbfi54n4ofuj8v3d3v9i61er9kl8.apps.googleusercontent.com",
       clientSecret: "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",
       callbackURL:
-        //"https://udemy-clone-server-node.herokuapp.com/auth/google/callback",
-        "/auth/google/callback",
+        "https://udemy-clone-server-node.herokuapp.com/auth/google/callback",
+      // "/auth/google/callback",
     },
     async function (accessToken, refreshToken, profile, done) {
       let User = await user
@@ -26,23 +26,23 @@ passport.use(
           boughtCourses: [],
         });
       }
-      done(null, User);
+      return done(null, User);
     }
   )
 );
 
-passport.use(
-  new FacebookStrategy(
-    {
-      clientID: "627882748352948",
-      clientSecret: "97451c8707c08a1e533d661c45cc5df8",
-      callbackURL:
-        "https://udemy-clone-server-node.herokuapp.com/auth/facebook/callback",
-    },
-    function (accessToken, refreshToken, profile, done) {
-      return done(null, "done");
-    }
-  )
-);
+// passport.use(
+//   new FacebookStrategy(
+//     {
+//       clientID: "627882748352948",
+//       clientSecret: "97451c8707c08a1e533d661c45cc5df8",
+//       callbackURL:
+//         "https://udemy-clone-server-node.herokuapp.com/auth/facebook/callback",
+//     },
+//     function (accessToken, refreshToken, profile, done) {
+//       return done(null, "done");
+//     }
+//   )
+// );
 
 module.exports = passport;
