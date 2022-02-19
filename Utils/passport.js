@@ -9,7 +9,8 @@ passport.use(
         "961217226688-01upqbfi54n4ofuj8v3d3v9i61er9kl8.apps.googleusercontent.com",
       clientSecret: "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",
       callbackURL:
-        "https://udemy-clone-server-node.herokuapp.com/auth/google/callback",
+        //"https://udemy-clone-server-node.herokuapp.com/auth/google/callback",
+        "/auth/google/callback",
     },
     async function (accessToken, refreshToken, profile, done) {
       let User = await user

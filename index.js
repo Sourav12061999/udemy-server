@@ -29,7 +29,7 @@ app.use("/userSignup", passportRoute);
 app.use("/getuser", userRoute);
 //Route for Passport
 app.get(
-  "https://udemy-clone-server-node.herokuapp.com/auth/google/callback",
+  "/auth/google/callback",
   passport.authenticate("google", {
     failureRedirect: `https://udemy-clone-front-end.vercel.app/`,
     session: false,
