@@ -13,19 +13,21 @@ passport.use(
       // "/auth/google/callback",
     },
     async function (accessToken, refreshToken, profile, done) {
-      let User = await user
-        .findOne({ email: profile._json.email })
-        .lean()
-        .exec();
-      if (!User) {
-        User = await user.create({
-          email: profile._json.email,
-          name: profile._json.name,
-          password: "",
-          cartCourses: [],
-          boughtCourses: [],
-        });
-      }
+      try {
+        let User = await user
+          .findOne({ email: profile._json.email })
+          .lean()
+          .exec();
+        if (!User) {
+          User = await user.create({
+            email: profile._json.email,
+            name: profile._json.name,
+            password: "",
+            cartCourses: [],
+            boughtCourses: [],
+          });
+        }
+      } catch (error) {}
       return done(null, User);
     }
   )
