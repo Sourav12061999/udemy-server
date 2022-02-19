@@ -31,7 +31,7 @@ app.use("/getuser", userRoute);
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
-    failureRedirect: `https://udemy-clone-front-end.vercel.app/login`,
+    failureRedirect: `https://udemy-clone-front-end.vercel.app/`,
     session: false,
   }),
   function (req, res) {
