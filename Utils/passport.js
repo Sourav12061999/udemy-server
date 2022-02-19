@@ -6,8 +6,8 @@ passport.use(
   new GoogleStrategy(
     {
       clientID:
-        "14082363482-mru7r6gtg8ek1l4vme9jlsrlsvm8vhl9.apps.googleusercontent.com",
-      clientSecret: "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",
+        "961217226688-01upqbfi54n4ofuj8v3d3v9i61er9kl8.apps.googleusercontent.com",
+      clientSecret: "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",
       callbackURL:
         "https://udemy-clone-server-node.herokuapp.com/auth/google/callback",
     },
