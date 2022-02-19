@@ -27,8 +27,10 @@ passport.use(
             boughtCourses: [],
           });
         }
-      } catch (error) {}
-      return done(null, User);
+        done(null, User);
+      } catch (error) {
+        done(null, false);
+      }
     }
   )
 );
