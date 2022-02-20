@@ -16,7 +16,11 @@ const userRoute = require("./Controllers/getUser");
 // Using Middlewares and app inialization
 
 const app = express(); // app initialization of express
-app.use(cors()); // Using the cors package
+app.use(
+  cors({
+    origin: "https://udemy-clone-front-end.vercel.app/",
+  })
+); // Using the cors package
 app.use(express.json());
 // Using the routes
 // Routes for getting Data
