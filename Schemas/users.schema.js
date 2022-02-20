@@ -9,7 +9,6 @@ const userSchema = new mongoose.Schema({
   cartCourses: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      unique: true,
       required: false,
       ref: "courseCards",
     },
@@ -17,7 +16,6 @@ const userSchema = new mongoose.Schema({
   boughtCourses: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      unique: true,
       required: false,
       ref: "courseCards",
     },
