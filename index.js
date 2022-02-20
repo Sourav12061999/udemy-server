@@ -1,6 +1,7 @@
 // Importing all necessery libraries
 const express = require("express");
 const cors = require("cors");
+const coookieSession = require("cookie-session");
 require("dotenv").config(); // Importing and using dotenv
 // Importing from my own code
 const connect = require("./Utils/mongoose-start"); // Importing the connecting function for mongodb
@@ -37,10 +38,13 @@ app.get(
   }),
   function (req, res) {
     if (req.user._id) {
-      res.cookie("udemy-clone-signin", req.user._id.toString());
+      res.cookie("udemy-clone-signin", req.user._id.toString(), {
+        maxAge: 9000000,
+      });
+      // coookieSession("udemy-clone-signin", req.user._id.toString())
     } else {
       res.cookie("udemy-clone-signin", req.user.toString(), {
-        maxAge: Date.now() + 90000000,
+        maxAge: 90000000,
       });
     }
     res.redirect(`https://udemy-clone-front-end.vercel.app/`);
