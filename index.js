@@ -18,7 +18,7 @@ const userRoute = require("./Controllers/getUser");
 const app = express(); // app initialization of express
 app.use(
   cors({
-    origin: "https://udemy-clone-front-end.vercel.app/",
+    origin: "https://udemy-clone-front-end.vercel.app",
   })
 ); // Using the cors package
 app.use(express.json());
