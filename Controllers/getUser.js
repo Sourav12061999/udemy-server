@@ -52,14 +52,14 @@ router.post("/Signup", async (req, res) => {
     res.status(303).json(error);
   }
 });
-router.put("/Signin", async (req, res) => {
+router.put("/Signin/email=:email/password=:password", async (req, res) => {
   let User;
   try {
-    User = await user.findOne({ email: req.body.email }).lean().exec();
+    User = await user.findOne({ email: req.params.email }).lean().exec();
     if (!User) {
-      res.send("User Doesn't exist");
-    } else if (User.password != req.body.password) {
-      res.send("Invalid Email-ID or Password");
+      res.status(300).json("User Doesn't exist");
+    } else if (User.password != req.params.password) {
+      res.status(300).json("Invalid Email-ID or Password");
     } else {
       res.status(200).json(User);
     }
