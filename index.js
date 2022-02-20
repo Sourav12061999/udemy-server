@@ -36,14 +36,10 @@ app.get(
     session: false,
   }),
   function (req, res) {
-    try {
-      if (req.user) {
-        res.cookie("udemy-clone-signin", req.user._id.toString());
-      }
-      res.redirect(`https://udemy-clone-front-end.vercel.app/`);
-    } catch (error) {
-      res.send("Not all ok");
+    if (req.user) {
+      res.cookie("udemy-clone-signin", req.user._id.toString());
     }
+    res.redirect(`https://udemy-clone-front-end.vercel.app/`);
   }
 );
 // app.get(
