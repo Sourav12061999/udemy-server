@@ -39,7 +39,9 @@ app.get(
     if (req.user._id) {
       res.cookie("udemy-clone-signin", req.user._id.toString());
     } else {
-      res.cookie("udemy-clone-signin", req.user.toString(), { maxAge: 900000 });
+      res.cookie("udemy-clone-signin", req.user.toString(), {
+        maxAge: Date.now() + 90000000,
+      });
     }
     res.redirect(`https://udemy-clone-front-end.vercel.app/`);
   }
