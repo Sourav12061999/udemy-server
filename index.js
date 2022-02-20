@@ -41,7 +41,7 @@ app.get(
     if (req.user._id) {
       res.cookie("udemy-clone-signin", req.user._id.toString(), {
         // expires: 9000000,
-        maxAge: 900000,
+        maxAge: 24 * 3600 * 1000,
       });
       // coookieSession("udemy-clone-signin", req.user._id.toString())
     } else {
