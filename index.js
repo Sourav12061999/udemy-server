@@ -5,8 +5,6 @@ const cookieParser = require("cookie-parser");
 require("dotenv").config(); // Importing and using dotenv
 // Importing from my own code
 const connect = require("./Utils/mongoose-start"); // Importing the connecting function for mongodb
-const comment = require("./Schemas/comments.schema");
-const passport = require("./Utils/passport.js");
 // Here I am importing all routes
 const CatagoryRoute = require("./Controllers/getCatagory");
 const CourseRoute = require("./Controllers/getCourse");
@@ -29,37 +27,6 @@ app.use("/Courses", CourseRoute);
 app.use("/CourseCard", CourseCardRoute);
 app.use("/userSignup", passportRoute);
 app.use("/getuser", userRoute);
-//Route for Passport
-app.get(
-  "/auth/google/callback",
-  passport.authenticate("google", {
-    // successRedirect: "https://udemy-clone-front-end.vercel.app/",
-    failureRedirect: `https://udemy-clone-front-end.vercel.app/`,
-    session: false,
-  }),
-  function (req, res) {
-    if (req.user._id) {
-      res.cookie("udemy-clone-signin", req.user._id.toString(), {
-        maxAge: 24 * 3600 * 1000,
-        sameSite: false,
-      });
-    } else {
-      res.cookie("udemy-clone-signin", req.user.toString(), {
-        maxAge: 900000,
-      });
-    }
-    res.redirect(`https://udemy-clone-front-end.vercel.app/`);
-    // res.redirect("/");
-  }
-);
-// app.get(
-//   "/auth/facebook/callback",
-//   passport.authenticate("facebook", {
-//     successRedirect: `https://udemy-clone-front-end.vercel.app/`,
-//     failureRedirect: `https://udemy-clone-front-end.vercel.app/`,
-//     session: false,
-//   })
-// );
 connect(); // Here connecting with mongodb
 // After the connecting has been made starting the server
 let PORT = process.env.PORT || 80;
