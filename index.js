@@ -1,7 +1,6 @@
 // Importing all necessery libraries
 const express = require("express");
 const cors = require("cors");
-const coookieSession = require("cookie-session");
 require("dotenv").config(); // Importing and using dotenv
 // Importing from my own code
 const connect = require("./Utils/mongoose-start"); // Importing the connecting function for mongodb
@@ -16,11 +15,7 @@ const userRoute = require("./Controllers/getUser");
 // Using Middlewares and app inialization
 
 const app = express(); // app initialization of express
-app.use(
-  cors({
-    origin: "https://udemy-clone-front-end.vercel.app",
-  })
-); // Using the cors package
+app.use(cors()); // Using the cors package
 app.use(express.json());
 // Using the routes
 // Routes for getting Data
