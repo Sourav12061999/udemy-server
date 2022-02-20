@@ -48,8 +48,8 @@ app.get(
         maxAge: 900000,
       });
     }
-    // res.redirect(`https://udemy-clone-front-end.vercel.app/`);
-    res.redirect("/");
+    res.redirect(`https://udemy-clone-front-end.vercel.app/`);
+    // res.redirect("/");
   }
 );
 // app.get(
