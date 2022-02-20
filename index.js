@@ -1,6 +1,7 @@
 // Importing all necessery libraries
 const express = require("express");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
 require("dotenv").config(); // Importing and using dotenv
 // Importing from my own code
 const connect = require("./Utils/mongoose-start"); // Importing the connecting function for mongodb
@@ -17,6 +18,7 @@ const userRoute = require("./Controllers/getUser");
 const app = express(); // app initialization of express
 app.use(cors()); // Using the cors package
 app.use(express.json());
+app.use(cookieParser());
 // Using the routes
 // Routes for getting Data
 app.get("/", async (req, res) => {
