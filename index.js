@@ -18,6 +18,12 @@ const userRoute = require("./Controllers/getUser");
 const app = express(); // app initialization of express
 app.use(cors()); // Using the cors package
 app.use(express.json());
+app.use(
+  cookieSession({
+    maxAge: 24 * 60 * 60 * 1000,
+    keys: ["udemy-clone-signin"],
+  })
+);
 // Using the routes
 // Routes for getting Data
 app.get("/", async (req, res) => {
@@ -40,6 +46,7 @@ app.get(
     if (req.user._id) {
       res.cookie("udemy-clone-signin", req.user._id.toString(), {
         maxAge: 9000000,
+        httpOnly: true,
       });
       // coookieSession("udemy-clone-signin", req.user._id.toString())
     } else {
