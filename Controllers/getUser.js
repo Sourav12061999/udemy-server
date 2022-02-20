@@ -52,7 +52,7 @@ router.post("/Signup", async (req, res) => {
     res.status(303).json(error);
   }
 });
-router.put("/Signin/email=:email/password=:password", async (req, res) => {
+router.get("/Signin/email=:email/password=:password", async (req, res) => {
   let User;
   try {
     User = await user.findOne({ email: req.params.email }).lean().exec();
