@@ -36,8 +36,10 @@ app.get(
     session: false,
   }),
   function (req, res) {
-    if (req.user) {
+    if (req.user._id) {
       res.cookie("udemy-clone-signin", req.user._id.toString());
+    } else {
+      res.cookie("udemy-clone-signin", req.user.toString());
     }
     res.redirect(`https://udemy-clone-front-end.vercel.app/`);
   }

@@ -29,7 +29,7 @@ passport.use(
         }
         done(null, User);
       } catch (error) {
-        done(null, false);
+        done(null, error);
       }
     }
   )
