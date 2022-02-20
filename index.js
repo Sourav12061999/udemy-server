@@ -41,7 +41,7 @@ app.get(
     if (req.user._id) {
       res.cookie("udemy-clone-signin", req.user._id.toString(), {
         maxAge: 24 * 3600 * 1000,
-        domain: "https://udemy-clone-front-end.vercel.app/",
+        sameSite: false,
       });
     } else {
       res.cookie("udemy-clone-signin", req.user.toString(), {
