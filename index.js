@@ -33,7 +33,7 @@ app.get(
   passport.authenticate("google", {
     // successRedirect: "https://udemy-clone-front-end.vercel.app/",
     failureRedirect: `https://udemy-clone-front-end.vercel.app/`,
-    session: false,
+    session: true,
   }),
   function (req, res) {
     if (req.user._id) {
