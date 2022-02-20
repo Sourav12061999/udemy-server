@@ -14,9 +14,6 @@ const courseSchema = mongoose.Schema({
   Description: { type: String, require: true },
   What_included: [{ type: String, require: true }],
   who_is_for: [{ type: String, require: true }],
-  comment: [
-    { type: mongoose.Schema.Types.ObjectId, require: false, ref: "comments" },
-  ],
 });
 
 const course = mongoose.model("courses", courseSchema);
