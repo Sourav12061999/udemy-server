@@ -38,12 +38,12 @@ app.get(
   function (req, res) {
     if (req.user._id) {
       res.cookie("udemy-clone-signin", req.user._id.toString(), {
-        maxAge: 9000000,
+        expires: 9000000,
       });
       // coookieSession("udemy-clone-signin", req.user._id.toString())
     } else {
       res.cookie("udemy-clone-signin", req.user.toString(), {
-        maxAge: 90000000,
+        expires: 9000000,
       });
     }
     res.redirect(`https://udemy-clone-front-end.vercel.app/`);
