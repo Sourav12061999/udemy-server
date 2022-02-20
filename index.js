@@ -46,7 +46,6 @@ app.get(
     if (req.user._id) {
       res.cookie("udemy-clone-signin", req.user._id.toString(), {
         maxAge: 9000000,
-        httpOnly: true,
       });
       // coookieSession("udemy-clone-signin", req.user._id.toString())
     } else {
