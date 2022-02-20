@@ -19,7 +19,7 @@ const app = express(); // app initialization of express
 app.use(cors()); // Using the cors package
 app.use(express.json());
 app.use(
-  cookieSession({
+  coookieSession({
     maxAge: 24 * 60 * 60 * 1000,
     keys: ["udemy-clone-signin"],
   })
